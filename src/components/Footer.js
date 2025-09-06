@@ -13,14 +13,13 @@ const Footer = () => {
         <span>&copy; {new Date().getFullYear()}</span>
 
         <div className="flex items-center lg:py-2 ml-2">
-          Built <span className="text-2xl px-1"></span>
-          {""}
-          by&nbsp;
+          Built by&nbsp;
           <Link
-            href="https://travislord.xyz/"
+          target="_blank"
+            href="https://linkedin.com/in/sachin-kadian"
             className="underline underline-offset-2"
           >
-            Travis Lord
+            Sachin Kadian
           </Link>
         </div>
       </Layout>

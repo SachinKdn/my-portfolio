@@ -1,8 +1,8 @@
 {
-  "name": "NexTemp",
+  "name": "MyPortfolio",
   "private": true,
   "version": "1.0.0",
-  "author": "Travis Lord <hi@travislord.xyz>",
+  "author": "Sachin Kadian <sachinkadian2019@gmail.com>",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

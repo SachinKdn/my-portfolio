@@ -64,14 +64,26 @@ export default function About() {
                 BIOGRAPHY
               </h2>
               <p className="font-medium ">
+                 I'm a software developer with expertise in Next.js, React, React Native, Node.js, MongoDB, and SQL. I have successfully
+ contributed to recruitment, healthcare, and IT projects, building scalable solutions that enhance hiring processes,
+ improve patient care, and optimize IT workflows. With a strong focus on problem-solving and innovation, I deliver
+ efficient, future-proof systems that adapt to rapidly changing technologies.
+              </p>
+              <p className="my-4 font-medium">
+                With over 1.5 year of experience in the industry, I
+                have honed my skills in both front-end and back-end
+                technologies, allowing me to deliver responsive and
+                high-performance websites and applications.
+              </p>
+              {/* <p className="my-4 font-medium">
                 I'm Riley, a dedicated web developer at Stellar Innovations,
                 where I specialize in creating dynamic and user-centric web
                 experiences. With over a decade of experience in the industry, I
                 have honed my skills in both front-end and back-end
                 technologies, allowing me to deliver responsive and
                 high-performance websites and applications.
-              </p>
-              <p className="my-4 font-medium">
+              </p> */}
+              {/* <p className="my-4 font-medium">
                 At Stellar Innovations, I've had the opportunity to work on
                 numerous high-profile projects that have challenged and expanded
                 my expertise. My technical skill set includes HTML, CSS,
@@ -82,9 +94,9 @@ export default function About() {
                 particularly proud of was creating an interactive web
                 application for a major event, which received widespread acclaim
                 for its intuitive design and seamless performance.
-              </p>
+              </p> */}
               <p className="my-4 font-medium">
-                P.s I'm a big fan of anime and not a real person ✌️.
+                Let's connect ✌️.
               </p>
             </div>
             <div
@@ -114,39 +126,41 @@ export default function About() {
             >
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumberFramerMotion value={1461} />+
+                  <AnimatedNumberFramerMotion value={1.5} />+
                 </span>
                 <h3
                   className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
                 xl:text-center md:text-lg sm:text-base xs:text-sm"
                 >
-                  Days of Coding
+                  Year of Experience
                 </h3>
               </div>
 
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumberFramerMotion value={500} />
+                  <AnimatedNumberFramerMotion value={183} />+
                 </span>
                 <h3
                   className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
                 xl:text-center md:text-lg sm:text-base xs:text-sm"
                 >
-                  Bugs Made
+                  DSA Problems Solved
                 </h3>
               </div>
 
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumberFramerMotion value={499} />
+                  <AnimatedNumberFramerMotion value={8} />
                 </span>
                 <h3
                   className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
                 xl:text-center md:text-lg sm:text-base xs:text-sm"
                 >
-                  Bugs Crushed
+                  Projects Made
                 </h3>
               </div>
+
+              
             </div>
             <HireMe2 />
           </div>

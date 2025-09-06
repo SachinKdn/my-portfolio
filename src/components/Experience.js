@@ -58,27 +58,29 @@ const Experience = () => {
 
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            position="Developer"
-            company="Stellar Innovations"
-            time="2020 - 2024"
-            address="200 Innovations st"
-            companyLink="https://github.com/lilxyzz/clay-theme"
-            work="At Stellar Innovations, I serve as a web developer, where I play a crucial role in designing and implementing cutting-edge web solutions. My responsibilities include developing responsive and high-performance websites and applications using technologies such as HTML, CSS, JavaScript, React, and Node.js. I collaborate closely with cross-functional teams to ensure our projects meet the highest standards of functionality and user experience. One of my key achievements at Stellar Innovations has been leading the development of a comprehensive e-commerce platform that significantly enhanced our client's online presence and sales. My work is driven by a passion for continuous learning and innovation, always striving to push the boundaries of what's possible in web development."
+            position="Associate SDE Trainee"
+            company="75way Technologies "
+            time="June 2024 - Dec 2024"
+            address="Mohali, Punjab"
+            companyLink="https://www.linkedin.com/company/75way"
+            work="I worked as a Software Developer Trainee at 75way Technologies, where I gained hands-on experience in building responsive and high-performance web applications. My role involved learning and applying technologies such as HTML, CSS, JavaScript, React, Next.js, and Node.js while collaborating with the development team to deliver functional and user-friendly solutions."
+            // One of my key achievements at Stellar Innovations has been leading the development of a comprehensive e-commerce platform that significantly enhanced our client's online presence and sales. My work is driven by a passion for continuous learning and innovation, always striving to push the boundaries of what's possible in web development.
           />
 
           <Details
-            position="Rad Tester"
-            company="Vault Technologies"
-            time="2018 - 2020"
-            address="404 Tech st"
-            companyLink="https://github.com/lilxyzz/holo-theme"
-            work="At Vault Technologies, I worked as a RAD (Rapid Application Development) Tester, where I was responsible for ensuring the quality and functionality of our software applications during the development process. My role involved designing and executing test plans, identifying and documenting bugs, and working closely with developers to resolve issues quickly. This position required a deep understanding of the software development lifecycle and a keen eye for detail to ensure our applications met the highest standards of performance and reliability. My contributions at Vault Technologies helped streamline our development processes and significantly improved the overall quality of our software products."
+            position="Associate SDE"
+            company="75way Technologies "
+            time="Jan 2025 - Present"
+            address="Mohali, Punjab"
+            companyLink="https://www.linkedin.com/company/75way"
+            work="At 75way Technologies, I'm serving as a software developer trainee, where I play a crucial role in designing and implementing cutting-edge Web & App solutions. I collaborate closely with development teams to ensure our projects meet the highest standards of functionality and user experience."
+            // work="At 75way Technologies, I worked as a RAD (Rapid Application Development) Tester, where I was responsible for ensuring the quality and functionality of our software applications during the development process. My role involved designing and executing test plans, identifying and documenting bugs, and working closely with developers to resolve issues quickly. This position required a deep understanding of the software development lifecycle and a keen eye for detail to ensure our applications met the highest standards of performance and reliability. My contributions at Vault Technologies helped streamline our development processes and significantly improved the overall quality of our software products."
           />
         </ul>
       </div>
       <div className="mt-40 flex items-center justify-between gap-3 grid-cols-2">
         <Link
-          href="/projects/"
+          href="/"
           target={"_self"}
           className={`flex items-center rounded-lg border-2 border-solid bg-light p-2.5 px-6 text-lg font-semibold
             capitalize text-dark hover:border-light hover:bg-dark hover:text-light 
@@ -86,10 +88,10 @@ const Experience = () => {
             md:p-2 md:px-4 md:text-base
              `}
         >
-          View Projects
+          Go Home
         </Link>
         <Link
-          href="/articles/"
+          href="/projects/"
           target={"_self"}
           className={`flex items-center rounded-lg border-2 border-solid bg-dark p-2.5 px-6 text-lg font-semibold
             capitalize text-light hover:border-dark hover:bg-transparent hover:text-dark 
@@ -97,7 +99,7 @@ const Experience = () => {
             md:p-2 md:px-4 md:text-base
              `}
         >
-          View Articles
+          View Projects
         </Link>
       </div>
     </div>
