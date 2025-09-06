@@ -1,5 +1,5 @@
 import AnimatedText from "@/components/AnimatedText";
-import { GithubIcon } from "@/components/Icons";
+import { DevIcon, UrlIcon } from "@/components/Icons";
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
@@ -7,7 +7,7 @@ import Link from "next/link";
 import { useRef } from "react";
 import { HireMe2 } from "@/components/HireMe2";
 
-import proj1 from "../../public/images/projects/clay-theme.png";
+import ai_or_not from "../../public/images/projects/ai-or-not.png";
 import loading from "../../public/images/articles/GTA6-VICE.gif";
 
 import TransitionEffect from "@/components/TransitionEffect";
@@ -145,7 +145,7 @@ lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4
             className="w-10"
             aria-label="github link"
           >
-            <GithubIcon />
+            <UrlIcon />
           </Link>
           <Link
             href={link}
@@ -250,11 +250,22 @@ export default function Projects() {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
+                type="Worked as Frontend Developer"
+                tools="NextJs | Tailwind CSS | Framer Motion | SEO"
+                title="AI OR NOT"
+                summary="Detect AI-generated images, text, music, deepfakes and video for your business - and yourself - with AI or Not"
+                img={ai_or_not}
+                date="2025"
+                link="/projects/ai-or-not"
+                github="https://www.aiornot.com/"
+              />
+            </div>
+            {/* <div className="col-span-6 sm:col-span-12">
+              <Project
                 type="Design & Development"
                 tools="HTML | CSS | JavaScript | Gatsby"
                 title="Clay - Gatsby Theme"
-                summary="Image-centric Gatsby theme for publishers, portfolio, photographers blogs and more."
-                img={proj1}
+                img={ai_or_not}
                 date="2023"
                 link="/projects/clay-gatsby-theme"
                 github="https://travislord.xyz/projects/clay-gatsby-theme"
@@ -265,26 +276,15 @@ export default function Projects() {
                 type="Design & Development"
                 tools="HTML | CSS | JavaScript | Gatsby"
                 title="Clay - Gatsby Theme"
-                img={proj1}
+                img={ai_or_not}
                 date="2023"
                 link="/projects/clay-gatsby-theme"
                 github="https://travislord.xyz/projects/clay-gatsby-theme"
               />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                type="Design & Development"
-                tools="HTML | CSS | JavaScript | Gatsby"
-                title="Clay - Gatsby Theme"
-                img={proj1}
-                date="2023"
-                link="/projects/clay-gatsby-theme"
-                github="https://travislord.xyz/projects/clay-gatsby-theme"
-              />
-            </div>
+            </div> */}
           </div>
 
-          <div>
+          {/* <div>
             <ul className="flex flex-col items-center relative pt-16">
               <Article
                 title="Adding more soon, thanks for the interest!"
@@ -320,7 +320,7 @@ export default function Projects() {
               </Link>
             </div>
             <HireMe2 />
-          </div>
+          </div> */}
         </Layout>
       </main>
     </>
