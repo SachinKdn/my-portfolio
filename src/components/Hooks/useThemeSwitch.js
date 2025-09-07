@@ -11,7 +11,8 @@ export function useThemeSwitch() {
     const handleChange = () => {
       if (userPref) {
         let check = userPref === "dark" ? "dark" : "light";
-        setMode(check);
+        // setMode(check);
+        setMode('dark');
         if (check === "dark") {
           document.documentElement.classList.add("dark");
         } else {
@@ -19,7 +20,8 @@ export function useThemeSwitch() {
         }
         return check;
       } else {
-        setMode(mediaQuery.matches ? "dark" : "light");
+        // setMode(mediaQuery.matches ? "dark" : "light");
+        setMode('dark');
         window.localStorage.setItem(
           "theme",
           mediaQuery.matches ? "dark" : "light"

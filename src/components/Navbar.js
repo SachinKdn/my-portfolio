@@ -7,7 +7,7 @@ import {
   DevIcon,
   GithubIcon,
   LinkedInIcon,
-  MoonIcon,
+  EmailIcon,
   SunIcon,
 } from "./Icons";
 import { motion } from "framer-motion";
@@ -129,6 +129,15 @@ const Navbar = () => {
 
           <motion.a
             target={"_blank"}
+            className="w-7 h-7 mx-3 bg-light rounded-full flex items-center"
+            href="mailto:sachinkadian2019@gmail.com"
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.9 }}
+            aria-label="Checkout my gmail">
+            <EmailIcon />
+          </motion.a>
+          <motion.a
+            target={"_blank"}
             className="w-7 mx-3 bg-light rounded-full"
             href="https://linkedin.com/in/sachin-kadian"
             whileHover={{ y: -2 }}
@@ -138,7 +147,7 @@ const Navbar = () => {
             <LinkedInIcon />
           </motion.a>
 
-          <motion.a
+          {/* <motion.a
             target={"_blank"}
             className="w-7 mx-3"
             href="https://dev.to/lilxyzz"
@@ -147,18 +156,18 @@ const Navbar = () => {
             aria-label="Checkout my Dev.to profile"
           >
             <DevIcon />
-          </motion.a>
+          </motion.a> */}
 
-          <motion.a
+          {/* <motion.a
             target={"_blank"}
             className="w-7 mx-3"
             href="https://dev.to/lilxyzz"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             aria-label="My Dev.to profile"
-          ></motion.a>
+          ></motion.a> */}
 
-          <button
+          {/* <button
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
             className={`w-7 h-7 ease ml-3 flex items-center justify-center rounded-full p-1  
             ${mode === "light" ? "bg-dark  text-light" : "bg-light  text-dark"}
@@ -170,7 +179,7 @@ const Navbar = () => {
             ) : (
               <MoonIcon className={"fill-dark"} />
             )}
-          </button>
+          </button> */}
         </nav>
       </div>
       {isOpen ? (
@@ -221,25 +230,34 @@ const Navbar = () => {
             <motion.a
               target={"_blank"}
               className="w-6 mr-3"
-              href="https://github.com/lilxyzz"
+              href="https://github.com/SachinKdn"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
               aria-label="Checkout my Github profile"
             >
               <GithubIcon />
             </motion.a>
+            <motion.a
+              target={"_blank"}
+              className="w-7 h-7 mx-3 bg-light rounded-full flex items-center"
+              href="mailto:sachinkadian2019@gmail.com"
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.9 }}
+              aria-label="Checkout my gmail">
+              <EmailIcon />
+            </motion.a>
 
             <motion.a
               target={"_blank"}
               className="w-6 mx-3 bg-light rounded-full"
-              href="https://medium.com/@travis.lord"
+              href="https://linkedin.com/in/sachin-kadian"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
               aria-label="Checkout my Medium profile"
             >
-              <MediumIcon />
+              <LinkedInIcon />
             </motion.a>
-            <motion.a
+            {/* <motion.a
               target={"_blank"}
               className="w-6 mx-3"
               href="https://dev.to/lilxyzz"
@@ -256,9 +274,9 @@ const Navbar = () => {
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
               aria-label="My Dev.to profile"
-            ></motion.a>
+            ></motion.a> */}
 
-            <button
+            {/* <button
               onClick={() => setMode(mode === "light" ? "dark" : "light")}
               className={`w-6 h-6 ease m-1 ml-3 sm:mx-1 flex items-center justify-center rounded-full p-1  
             ${mode === "light" ? "bg-dark  text-light" : "bg-light  text-dark"}
@@ -270,7 +288,7 @@ const Navbar = () => {
               ) : (
                 <MoonIcon className={"fill-dark"} />
               )}
-            </button>
+            </button> */}
           </nav>
         </motion.div>
       ) : null}
